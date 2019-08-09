@@ -51,6 +51,13 @@
 			<version>3.14.1</version>
 		</dependency>
 		<!-- HTTP请求器 -->
+		<!-- commons -->
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.3</version>
+		</dependency>
+		<!-- commons -->
 
 
 		<!--swagger begin-->
