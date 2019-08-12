@@ -32,6 +32,11 @@ public class MapObjectUtil {
         return obj;
     }
 
+    /**
+     * Object 转为 map
+     * @param obj
+     * @return
+     */
     public static Map<?, ?> objectToMap(Object obj) {
 
         if (Objects.isNull(obj)){
