@@ -13,10 +13,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.constraints.Email;
+import javax.validation.constraints.Max;
 
 @RestController
 @RequestMapping("/validation")
 @Api(value = "/validation", description = "校验")
+@Validated
 public class ValidationController {
 
     @GetMapping("/entity/test")
@@ -35,7 +37,7 @@ public class ValidationController {
     @GetMapping("/param/test/{userId}")
     @ApiOperation("参数请求验证")
     public ApiResult testParamValidation(
-            @Validated @Email @PathVariable String userId
+            @Max(100) @PathVariable String userId
     ){
 
         return ApiResult.success("");

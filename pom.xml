@@ -12,6 +12,12 @@
 	</properties>
 
 	<dependencies>
+		<!-- Cassandra starter -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-cassandra</artifactId>
+		</dependency>
+		<!-- Cassandra starter -->
 		<!--MongoDb starter-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -1,5 +1,5 @@
 server:
-  port: 16000
+  port: 16001
   servlet:
     context-path: /
 spring:
@@ -14,6 +14,12 @@ spring:
         min-idle: 0
         max-idle: 8
     database: 0
-
+  data:
+    cassandra:
+      cluster-name: test
+      username: cassandra
+      password: eanxTvk6a&mq9Fbp
+      keyspace-name: wqw
+      contact-points: cds-proxy-pub-2ze0a99do9p8rc20-1-core-002.cassandra.rds.aliyuncs.com
 
 
